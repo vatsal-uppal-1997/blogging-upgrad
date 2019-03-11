@@ -1,14 +1,45 @@
-body{
+body {
    background: url('background.jpg');
    background-repeat: no-repeat;
    background-attachment: fixed;
    background-position: center center;
    background-size: cover;
    margin: 0 !important;
-   background-size: 100% cover!important;
-   overflow:hidden;
+   background-size: 100% cover !important;
+   overflow: hidden;
    display: block;
-} 
+}
 
 /* Set a style for the rest of the elements besides the header elements on the index.html page */
-                                 
+html {
+   height: 100%;
+}
+
+body {
+   padding-top: 5px;
+   padding-left: 10px;
+   padding-right: 10px;
+   min-height: 100%;
+   height: 100%;
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-content: center;
+   height: 100%;
+}
+
+.postButtons {
+   margin: auto auto 30rem auto;
+}
+
+.postButtons button {
+   background: #cebd2d;
+   height: 2.5rem;
+   color: black;
+   font-weight: bolder;
+   margin-left: 10px;
+   cursor: pointer;
+}
