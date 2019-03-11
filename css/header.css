@@ -1,2 +1,43 @@
 /* Set a style for all elements inside the header i.e. Sign Up button, Sign In button, 
 the title "ScriBBler" & the sub-heading below "ScriBBLer" */
+@font-face {
+    font-family: "satisfy";
+    src: url("./Satisfy-Regular.ttf");
+}
+
+@font-face {
+    font-family: "markscript";
+    src: url("./MarckScript-Regular.ttf");
+}
+
+.header {
+    font-family: "satisfy";
+    display: flex;
+    justify-content: flex-end;
+}
+
+.align-left {
+    margin-right: auto;
+}
+
+.header .align-left .heading {
+    font-size: 40px;
+    font-weight: normal;
+    color: #4a23bd;
+    margin: 0;
+}
+
+.header .align-left .sub-heading {
+    font-family: "markscript";
+    font-weight: normal;
+    margin: 0;
+}
+
+.header .align-right button {
+    background: #4a00ff;
+    color: white;
+    width: 6rem;
+    height: 2.5rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
