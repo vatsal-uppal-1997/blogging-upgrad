@@ -1,23 +1,23 @@
 /* Set a style for all elements inside the header i.e. Sign Up button, Sign In button, 
 the title "ScriBBler" & the sub-heading below "ScriBBLer" */
 @font-face {
-    font-family: "satisfy";
+    font-family: "satisfy"; /** Font used by header */
     src: url("./Satisfy-Regular.ttf");
 }
 
 @font-face {
-    font-family: "markscript";
+    font-family: "markscript"; /** Font used by sub heading*/
     src: url("./MarckScript-Regular.ttf");
 }
 
 .header {
     font-family: "satisfy";
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end; /** move everything to the right (a cool trick explained below) */
 }
 
 .align-left {
-    margin-right: auto;
+    margin-right: auto; /** moves only this div (align-left) to left by setting right margin to auto*/
 }
 
 .header .align-left .heading {
