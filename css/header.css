@@ -82,6 +82,7 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
     border: 1px solid #888;
     width: 25%;
     font-family: "ubuntuCondensed"; /* Font for modals according to provided images */
+    color: black !important;
  }
  
  /* hr fix */
