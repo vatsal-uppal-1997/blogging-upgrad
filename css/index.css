@@ -102,6 +102,10 @@ body {
    margin: 0 auto 1rem auto;
 }
 
+.modal-content .form {
+   margin-bottom: 2rem;
+}
+
 .modal-content .form-group {
    margin: 2rem auto 2rem auto;
 }
