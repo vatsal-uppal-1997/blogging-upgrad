@@ -15,3 +15,11 @@ function closeModal(element) {
     const modal = element.parentElement.parentElement; // Get the modal container element
     modal.style.display = "none";
 }
+
+/**
+ * Redirect to desired location
+ * @param {String} location 
+ */
+function redirect(location) {
+    window.location.href = location;
+}
