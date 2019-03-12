@@ -16,7 +16,7 @@ body {
 
 .post {
     position: relative;
-    width: 50rem;
+    width: 43rem;
     height: 11rem;
     background: #fff;
     box-shadow: 0 4px 10px 0 rgba(17, 4, 63, 0.2), 0 4px 20px 0 rgba(79, 19, 97, 0.19);
@@ -66,6 +66,7 @@ body {
 
 .post-desc {
     height: 70px;
+    /*Display only three lines*/
     margin-bottom: 0 !important;
     overflow: hidden;
     line-height: 1.5em;
@@ -81,4 +82,33 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+.post-icon {
+    float: right;
+    font-size: 30px !important;
+    cursor: pointer;
+}
+
+/*The delete post alert box*/
+.alert-modal {
+    background-color: #fefefe;
+    margin: 15rem auto;
+    padding: 1rem;
+    border: 1px solid #888;
+    width: 28rem;
+    font-family: "ubuntuCondensed";
+    /* Font for modals according to provided images */
+    text-align: center;
+    color: black !important;
+}
+
+.alert-modal .alert-btn {
+    border: 0;
+    color: white;
+    width: 10rem;
+    height: 50px;
+    margin-right: 25px;
+    margin-left: 30px;
+    cursor: pointer;
 }
