@@ -9,6 +9,11 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
     font-family: "markscript"; /** Font used by sub heading*/
     src: url("./MarckScript-Regular.ttf");
 }
+/** Font for Modal*/
+@font-face {
+    font-family: "ubuntuCondensed";
+    src: url("./UbuntuCondensed-Regular.ttf");
+ }
 
 .header {
     font-family: "satisfy";
@@ -41,3 +46,103 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
     margin-right: 0.5rem;
     cursor: pointer;
 }
+
+
+/* The Modal (background) */
+.modal-background {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+ }
+ 
+ /* Modal Content */
+ .modal-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 25%;
+    font-family: "ubuntuCondensed"; /* Font for modals according to provided images */
+ }
+ 
+ /* hr fix */
+ /* display flex corrupts hr, the solution involves setting left and right margins to 0*/
+ .modal-content hr {
+    margin-left: 0;
+    margin-right: 0;
+ }
+ 
+ .modal-content .modal-heading {
+    font-weight: normal;
+    margin: 0 auto 1rem auto;
+    color: black;
+ }
+ 
+ .modal-content .form {
+    margin-bottom: 2rem;
+ }
+ 
+ .modal-content .form-group {
+    margin: 2rem auto 2rem auto;
+ }
+ 
+ .modal-content .form-group input {
+    display: block;
+    margin-top: 5px;
+    border: 0;
+    padding: 10px;
+    height: 2rem;
+    width: 100%; /*Strange behaviour on firefox added below two rules to fix that*/
+    width: -moz-available;
+    /** For Mozzila */
+    width: -webkit-fill-available;
+    /** For Chrome */
+    background: #f1f1f1;
+ }
+ 
+ .modal-content input[type="submit"] {
+    height: 3rem;
+    border: 0;
+    color: white;
+    width: 100%;
+    width: -moz-available;
+    /** For Mozzila */
+    width: -webkit-fill-available;
+    /** For Chrome */
+    background: #2fc462;
+ }
+ 
+ /* The Close Button */
+ .modal-content .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+    align-self: flex-end;
+ }
+ 
+ .close:hover,
+ .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+ }
