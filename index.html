@@ -32,7 +32,7 @@
             <div class="postButtons">
                 <!-- Insert code for All Posts & Create Post button here -->
                 <button onclick="redirect('html/bloglist.html')">All Posts</button>
-                <button>Create Post</button>
+                <button onclick="showModal('create-post-modal')">Create Post</button>
             </div>
         </div>
     </div>
@@ -97,10 +97,28 @@
                         up</a></b></p>
         </div>
     </div>
-    <div>
-
-        <!-- Insert code for Create Post modal here -->
-
+    <div class="modal-background" id="create-post-modal">
+        <!-- Insert code for Sign In modal here -->
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(this)">&times;</span>
+            <h1 class="modal-heading">Create A Post!</h1>
+            <hr>
+            <form class="form">
+                <div class="form-group">
+                    <label for="title">
+                        Post Title
+                    </label>
+                    <input type="text" placeholder="Enter title" name="title" required />
+                </div>
+                <div class="form-group">
+                    <label for="post">
+                        Post Content
+                    </label>
+                    <textarea name="post" placeholder="Enter post content..." style="display: block;width: 100%;resize: none;height: 10rem;" required></textarea>
+                </div>
+                <input type="submit" value="Post"/>
+            </form>
+        </div>
     </div>
 
     <!-- Place all Javascript for header in this file -->
