@@ -49,7 +49,9 @@
 }
 
 .comment-container {
-    background: gray;
+    background: #e1e3e5;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Set a style for all the remaining elements like Like button, Edit button, Comment button and so on. */

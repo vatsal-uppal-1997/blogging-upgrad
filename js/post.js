@@ -81,3 +81,24 @@ function likePost(button, counterId) {
     counter.innerText = text;
     button.innerHTML = '<i class="fa fa-thumbs-up" aria-hidden="true"></i>Liked!';
 }
+
+/**
+ * Function to add comments in the comment section of the page
+ * @param {String} commentContainerId Id of the parent element to add comments in
+ * @param {String} comment id of the textarea to get comments from
+ */
+function addComment(commentContainerId, comment) {
+    const commentContainer = document.getElementById(commentContainerId);
+    const commentTextArea = document.getElementById(comment);
+    const commentDiv = document.createElement("div");
+    const textNode = document.createTextNode(commentTextArea.value);
+    commentDiv.appendChild(textNode);
+    commentDiv.style.background = "white";
+    commentDiv.style.marginTop = "1rem";
+    commentDiv.style.marginBottom = "1rem";
+    commentDiv.style.marginLeft = "1rem";
+    commentDiv.style.marginRight = "1rem";
+    commentDiv.style.padding = "1rem";
+    commentContainer.appendChild(commentDiv);
+    return false;
+}

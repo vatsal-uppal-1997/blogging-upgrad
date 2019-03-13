@@ -63,12 +63,12 @@
         <button class="btn-like" onclick="likePost(this, 'likeCounter')"><i class="fa fa-thumbs-up" aria-hidden="true"></i>
              Like</button>
         <p id="likeCounter">Be the first one to like this!</p>
-        <form>
-            <textarea rows="5" cols="110" placeholder="Leave a comment..." style="display: block"></textarea>
+        <form onsubmit="return addComment('commentContainer',  'comment')">
+            <textarea rows="5" cols="110" placeholder="Leave a comment..." style="display: block" id="comment"></textarea>
             <button class="btn-like" style="border-radius: 0">Comment</button>
         </form>
         <p style="margin-top: 2rem;"><b>All Comments</b></p>
-        <div class="comment-container">
+        <div class="comment-container" id="commentContainer">
             
         </div>
         <script src="..\js\post.js" defer></script>
