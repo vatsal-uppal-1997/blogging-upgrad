@@ -60,6 +60,7 @@ function editPost(button, postId, titleId) {
     titleTextArea.style.textAlign = "center";
     titleTextArea.style.height = (titleTextArea.scrollHeight)+"px";
     titleTextArea.style.width = "30%";
+    titleTextArea.style.borderColor = "#ffbfce";
     title.style.display = "none";
     post.style.display = "none";
     button.innerHTML = 'Save <i class="fa fa-floppy-o" aria-hidden="true"></i>';
