@@ -18,4 +18,4 @@ A simple blogging website frontend that'll enable users to:-
 
 *Roll Number:* 1611981409
 
-*College:* Chitkara UNiversity, Baddi, Himachal Pradesh
+*College:* Chitkara University, Baddi, Himachal Pradesh
