@@ -15,21 +15,20 @@ body {
 }
 
 .post {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 43rem;
     height: 11rem;
     background: #fff;
     box-shadow: 0 4px 10px 0 rgba(17, 4, 63, 0.2), 0 4px 20px 0 rgba(79, 19, 97, 0.19);
     margin: 10px 10px 10px 20px;
-    float: left;
     border-radius: 15px;
 }
 
 .post-left {
     width: 15%;
     max-width: 15%;
-    display: table-cell;
-    vertical-align: middle;
     text-align: center;
     font-weight: bold;
     color: #000;
@@ -37,8 +36,6 @@ body {
 
 .post-content {
     width: 40rem;
-    display: table-cell;
-    text-align: left;
     background-color: #E8E8E8;
     color: #000000;
     border-radius: 0 15px 15px 0;
