@@ -99,6 +99,6 @@ function addComment(commentContainerId, comment) {
     commentDiv.style.marginLeft = "1rem";
     commentDiv.style.marginRight = "1rem";
     commentDiv.style.padding = "1rem";
-    commentContainer.appendChild(commentDiv);
+    commentContainer.insertBefore(commentDiv, commentContainer.firstChild);
     return false;
 }
