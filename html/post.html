@@ -30,7 +30,8 @@
 
         <div class="blogAuthor">
             <p style="display: inline">Jimi</p>
-            <button class="btn" onclick="editPost(this, 'blogBody', 'blogTitleNew')">Edit <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+            <button class="btn" onclick="editPost(this, 'blogBody', 'blogTitleNew')">Edit <i class="fa fa-pencil-square-o"
+                    aria-hidden="true"></i>
             </button>
         </div>
 
@@ -61,7 +62,7 @@
 
         <!-- Insert code for Like button, Comment button, Comment box here-->
         <button class="btn-like" onclick="likePost(this, 'likeCounter')"><i class="fa fa-thumbs-up" aria-hidden="true"></i>
-             Like</button>
+            Like</button>
         <p id="likeCounter">Be the first one to like this!</p>
         <form onsubmit="return addComment('commentContainer',  'comment')">
             <textarea rows="5" cols="110" placeholder="Leave a comment..." style="display: block" id="comment"></textarea>
@@ -69,7 +70,67 @@
         </form>
         <p style="margin-top: 2rem;"><b>All Comments</b></p>
         <div class="comment-container" id="commentContainer">
-            
+
+        </div>
+        <div class="modal-background" id="sign-up-modal">
+            <!-- Insert code for Sign Up modal here -->
+            <div class="modal-content">
+                <span class="close" onclick="closeModal(this)">&times;</span>
+                <h1 class="modal-heading">Get Started</h1>
+                <hr>
+                <form class="form">
+                    <div class="form-group">
+                        <label for="name">
+                            Full Name
+                        </label>
+                        <input type="text" placeholder="Enter Full Name" name="name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="username">
+                            Username
+                        </label>
+                        <input type="text" placeholder="Enter Username" name="username" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="password">
+                            Password
+                        </label>
+                        <input type="password" placeholder="Enter Password" name="password" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">
+                            Confirm Password
+                        </label>
+                        <input type="password" placeholder="Confirm Password" name="confirmPassword" required />
+                    </div>
+                    <input type="submit" value="Sign Up" />
+                </form>
+            </div>
+        </div>
+        <div class="modal-background" id="sign-in-modal">
+            <!-- Insert code for Sign In modal here -->
+            <div class="modal-content">
+                <span class="close" onclick="closeModal(this)">&times;</span>
+                <h1 class="modal-heading">Welcome Back!</h1>
+                <hr>
+                <form class="form">
+                    <div class="form-group">
+                        <label for="username">
+                            Username
+                        </label>
+                        <input type="text" placeholder="Enter Username" name="username" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="password">
+                            Password
+                        </label>
+                        <input type="password" placeholder="Enter Password" name="password" required />
+                    </div>
+                    <input type="submit" value="Sign In" />
+                </form>
+                <p style="text-align: center"><b>Not a member? <a href=# style="text-decoration: none" onclick="(()=>{closeModal(this.parentElement.parentElement);showModal('sign-up-modal');})()">Sign
+                            up</a></b></p>
+            </div>
         </div>
         <script src="..\js\post.js" defer></script>
         <script src="..\js\header.js">
