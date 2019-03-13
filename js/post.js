@@ -65,3 +65,19 @@ function editPost(button, postId, titleId) {
     post.style.display = "none";
     button.innerHTML = 'Save <i class="fa fa-floppy-o" aria-hidden="true"></i>';
 }
+
+/**
+ * Function to add likes to a post
+ * @param {HTMLElement} button the like button - changed to liked by the end of this function 
+ * @param {String} counterId id of the like counter
+ */
+function likePost(button, counterId) {
+    const counter = document.getElementById(counterId);
+    let text = counter.innerText;
+    if (isNaN(text[0]))
+        text = "1 person likes this!";
+    else
+        text = ++text.split(" ")[0] + " person likes this!";
+    counter.innerText = text;
+    button.innerHTML = '<i class="fa fa-thumbs-up" aria-hidden="true"></i>Liked!';
+}

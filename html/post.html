@@ -60,9 +60,9 @@
         </div>
 
         <!-- Insert code for Like button, Comment button, Comment box here-->
-        <button class="btn-like"><i class="fa fa-thumbs-up" aria-hidden="true"></i>
+        <button class="btn-like" onclick="likePost(this, 'likeCounter')"><i class="fa fa-thumbs-up" aria-hidden="true"></i>
              Like</button>
-        <p>Be the first one to like this!</p>
+        <p id="likeCounter">Be the first one to like this!</p>
         <form>
             <textarea rows="5" cols="110" placeholder="Leave a comment..." style="display: block"></textarea>
             <button class="btn-like" style="border-radius: 0">Comment</button>
