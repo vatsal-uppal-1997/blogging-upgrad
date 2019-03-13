@@ -19,6 +19,7 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
     font-family: "satisfy";
     display: flex;
     justify-content: flex-end; /** move everything to the right (a cool trick explained below) */
+    align-items: baseline;
 }
 
 .align-left {
@@ -41,9 +42,8 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
 .header .align-right button {
     background: #4a00ff;
     color: white;
-    width: 6rem;
+    width: 5rem;
     height: 2.5rem;
-    margin-right: 0.5rem;
     cursor: pointer;
 }
 
