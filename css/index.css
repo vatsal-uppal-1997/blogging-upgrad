@@ -34,9 +34,12 @@ body {
    height: 100%;
 }
 
-.postButtons {
-   margin: auto auto 30rem auto;
-   /** 30rem to match the image (somewhat) */
+.content {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
 }
 
 .postButtons button {
