@@ -2,18 +2,54 @@
     font-size: 150%;
     font-family: 'Abel', sans-serif;
     font-weight: bold;
+    text-align: center;
 }
+
 .blogText {
-     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
+
 .blogAuthor {
-    padding: 0px 0px 0px 10px;
     font-family: 'Niconne', cursive;
     font-size: 30px;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
 }
-.blogContent{
 
+.blogAuthor .btn {
+    background: #ff005b;
+    border: 0;
+    width: 5rem;
+    height: 2rem;
+    color: white;
+    float: right;
+    box-shadow: 2px 4px 5px 1px #ffa0ba;
+}
+
+.btn-like {
+    background: #ff005b;
+    border: 0;
+    width: 8rem;
+    height: 3rem;
+    color: white;
+    box-shadow: 2px 4px 5px 1px #ffa0ba;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.blogContent {
+    margin: 0 5rem;
+    line-height: 1.5rem;
+    margin-top: 3rem;
+}
+
+.blogText #blogBody {
+    text-align: justify;
+}
+
+.comment-container {
+    background: gray;
 }
 
 /* Set a style for all the remaining elements like Like button, Edit button, Comment button and so on. */
